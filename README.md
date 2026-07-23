@@ -59,4 +59,4 @@ python bfs.py
 - **Visuals Included**: Each experiment directory contains pre-generated visual graphs, trees, or charts matching the theoretical output.
 
 ---
-<p align="center">Made with ❤️ for JNTUA Students.</p>
+<p align="center">made be chakri chitteti.</p>
