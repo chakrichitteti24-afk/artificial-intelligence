@@ -1,0 +1,5 @@
+matplotlib==3.9.0
+networkx==3.3
+graphviz==0.20.3
+prettytable==3.10.0
+numpy==2.0.0
