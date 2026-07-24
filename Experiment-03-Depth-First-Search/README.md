@@ -143,6 +143,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](graph.png)
+
 The graph tested in `dfs.py` is an undirected connected graph with 8 nodes ($A$ through $H$).
 
 ```mermaid
@@ -249,6 +251,8 @@ if __name__ == "__main__":
 ```
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌────────────────────────────────────────────────────────┐

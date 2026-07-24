@@ -169,6 +169,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](graph.png)
+
 Below is the directional weighted state space graph showing all node heuristic values $h(n)$ and connected edge paths.
 
 ```mermaid
@@ -336,6 +338,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────┐

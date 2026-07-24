@@ -197,6 +197,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](flowchart.png)
+
 Abstract Syntax Trees (AST) of Expressions $E_1$ and $E_2$ with Unification Bindings:
 
 ```mermaid
@@ -327,6 +329,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────┐

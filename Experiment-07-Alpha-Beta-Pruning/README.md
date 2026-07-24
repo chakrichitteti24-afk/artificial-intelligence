@@ -241,6 +241,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](tree.png)
+
 Below is the graph representation distinguishing **MAX nodes**, **MIN nodes**, evaluated leaf states, and **PRUNED branches** explicitly marked:
 
 ```mermaid
@@ -384,6 +386,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌────────────────────────────────────────┐

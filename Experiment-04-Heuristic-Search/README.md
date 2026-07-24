@@ -189,6 +189,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](graph.png)
+
 ### 1. Adjacency Graph Topology
 ```mermaid
 graph LR
@@ -335,6 +337,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌───────────────────────────────────────────────┐

@@ -45,7 +45,7 @@ def gen_bfs():
     plt.figure(figsize=(6,4))
     nx.draw(G, pos, with_labels=True, node_color='#87CEFA', node_size=2000, font_size=16, font_weight='bold')
     plt.title("Breadth First Search Graph")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
     
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-01-Breadth-First-Search", "output.png"), 
@@ -66,7 +66,7 @@ def gen_best_first():
     path_edges = [('S','C'), ('C','H'), ('H','G')]
     nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='r', width=2.5)
     plt.title("Best First Search Weighted Graph (Path Highlighted)")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
     
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-02-Best-First-Search", "output.png"), 
@@ -82,7 +82,7 @@ def gen_dfs():
     plt.figure(figsize=(6,4))
     nx.draw(G, pos, with_labels=True, node_color='#FFB6C1', node_size=2000, font_size=16, font_weight='bold')
     plt.title("Depth First Search Tree")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
     
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-03-Depth-First-Search", "output.png"), 
@@ -101,7 +101,7 @@ def gen_heuristic():
     plt.title("Hill Climbing (Heuristic Search) Optimization")
     plt.legend()
     plt.grid(True)
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
 
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-04-Heuristic-Search", "output.png"), 
@@ -123,7 +123,7 @@ def gen_astar():
     path_edges = [('S','A'), ('A','C'), ('C','D'), ('D','G')]
     nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='r', width=2.5)
     plt.title("A* Search Shortest Path")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
     
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-05-A-Star-AO-Star", "output.png"), 
@@ -139,7 +139,7 @@ def gen_water_jug():
     plt.figure(figsize=(4,6))
     nx.draw(G, pos, with_labels=True, node_color='#E0FFFF', node_size=2500, font_size=12, font_weight='bold', node_shape='s')
     plt.title("Water Jug State Space (Target: 2 Gallons)")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
     
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-06-Water-Jug", "output.png"), 
@@ -157,7 +157,7 @@ def gen_alpha_beta():
     plt.figure(figsize=(6,4))
     nx.draw(G, pos, with_labels=True, node_color=color_map, node_size=2500, font_size=12, font_weight='bold')
     plt.title("Alpha-Beta Pruning Game Tree")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
     
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-07-Alpha-Beta-Pruning", "output.png"), 
@@ -178,7 +178,7 @@ def gen_nqueens():
     plt.xticks([])
     plt.yticks([])
     plt.title("4-Queens Solution")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
 
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-08-N-Queens", "output.png"), 
@@ -197,7 +197,7 @@ def gen_meeting():
     ax.set_xlabel('Time (Hours - 24H format)')
     ax.set_title('Meeting Schedule (Gantt Chart)')
     plt.grid(axis='x')
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
 
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-09-Meeting-Scheduling", "output.png"), 
@@ -213,7 +213,7 @@ def gen_unification():
     plt.figure(figsize=(5,5))
     nx.draw(G, pos, with_labels=True, node_color='#E6E6FA', node_size=3000, font_size=10, font_weight='bold', arrows=True, node_shape='s')
     plt.title("Unification Algorithm Flow")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
 
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-10-Unification", "output.png"), 
@@ -229,7 +229,7 @@ def gen_kb():
     plt.figure(figsize=(6,4))
     nx.draw(G, pos, with_labels=True, node_color='#F5DEB3', node_size=3000, font_size=12, font_weight='bold', arrows=True)
     plt.title("Medical Expert System Inference Graph")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
 
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-11-Knowledge-Base-System", "output.png"), 
@@ -245,7 +245,7 @@ def gen_8puzzle():
     plt.figure(figsize=(5,4))
     nx.draw(G, pos, with_labels=True, node_color='#D8BFD8', node_size=2000, font_size=12, font_weight='bold')
     plt.title("8-Puzzle Search Tree (A* manhattan)")
-    plt.savefig(path)
+    plt.savefig(path, dpi=300, bbox_inches='tight')
     plt.close()
     
     path_stats = os.path.join(BASE_DIR, "Experiment-12-8-Puzzle", "statistics_table.png")
@@ -256,7 +256,7 @@ def gen_8puzzle():
     table = ax.table(cellText=table_data, loc='center', cellLoc='center', colWidths=[0.5, 0.3])
     table.scale(1, 1.5)
     plt.title("8-Puzzle Performance Stats")
-    plt.savefig(path_stats)
+    plt.savefig(path_stats, dpi=300, bbox_inches='tight')
     plt.close()
 
     create_terminal_output(os.path.join(BASE_DIR, "Experiment-12-8-Puzzle", "output.png"), 

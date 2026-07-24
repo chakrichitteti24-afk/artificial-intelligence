@@ -201,6 +201,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](graph.png)
+
 The input graph is an unweighted, undirected graph containing 8 vertices ($V = \{A, B, C, D, E, F, G, H\}$) and 7 edges ($E = 7$).
 
 ```mermaid
@@ -333,6 +335,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌──────────────────────────────────────────────────────────┐

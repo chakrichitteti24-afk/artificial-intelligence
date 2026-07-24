@@ -260,6 +260,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](chessboard.png)
+
 Constraint network graph illustrating mutual conflict constraints between variables $Q_0, Q_1, Q_2, Q_3$ for $N=4$:
 
 ```mermaid
@@ -392,6 +394,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ```
 ┌────────────────────────────────────────────────────────┐

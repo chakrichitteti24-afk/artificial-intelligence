@@ -257,6 +257,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](graph.png)
+
 The following Mermaid graph displays the full state transition network explored during BFS for $A=4, B=3$:
 
 ```mermaid
@@ -407,6 +409,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ### Unicode Box Formatted Output
 ```text

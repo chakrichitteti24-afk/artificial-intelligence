@@ -268,6 +268,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](knowledge_graph.png)
+
 ```mermaid
 graph LR
     subgraph Facts["Ground Facts in Working Memory"]
@@ -408,6 +410,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐

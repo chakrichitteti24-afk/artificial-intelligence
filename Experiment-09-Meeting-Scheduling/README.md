@@ -161,6 +161,8 @@ flowchart TD
 
 ## Graph Representation
 
+![Graph](schedule_chart.png)
+
 The Constraint Graph below represents meetings as nodes and time conflicts as undirected edges. An edge exists between $M_i$ and $M_j$ if their time slots overlap ($\max(s_i, s_j) < \min(e_i, e_j)$), forcing them to be placed in different rooms.
 
 ```mermaid
@@ -263,6 +265,8 @@ if __name__ == "__main__":
 ```
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐

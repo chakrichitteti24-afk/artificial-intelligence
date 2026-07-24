@@ -247,6 +247,8 @@ graph TD
 
 ## Graph Representation
 
+![Graph](graph.png)
+
 ### 1. A* Weighted Graph
 ```mermaid
 graph LR
@@ -550,6 +552,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ### 1. Terminal Output for `astar.py`
 ```text

@@ -241,6 +241,10 @@ graph TD
 
 ## Graph Representation
 
+![Graph](search_tree.png)
+
+![Statistics](statistics_table.png)
+
 ```mermaid
 graph LR
     subgraph Layer 0 [Start Level g=0]
@@ -421,6 +425,8 @@ if __name__ == "__main__":
 ---
 
 ## Output
+
+![Output](output.png)
 
 ```text
 ┌───────────────────────────────────────────────────────────┐
