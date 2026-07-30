@@ -58,15 +58,15 @@ if __name__ == "__main__":
     tree_depth = math.log(len(scores), 2)
     tree_depth = int(tree_depth)
     
-    print("┌────────────────────────────────────────┐")
-    print("│         Alpha-Beta Pruning Test        │")
-    print("├────────────────────────────────────────┤")
-    print("│ Leaf node scores:                      │")
-    print(f"│ {str(scores):<38} │")
-    print("├────────────────────────────────────────┤")
+    print("+----------------------------------------+")
+    print("|         Alpha-Beta Pruning Test        |")
+    print("+----------------------------------------+")
+    print("|  Leaf node scores:                     |")
+    print(f"|  {str(scores):<38}|")
+    print("+----------------------------------------+")
     
     # Calculate optimal value
     optimal_value = minimax_alpha_beta(0, 0, True, scores, -math.inf, math.inf, tree_depth)
     
-    print(f"│ Optimal value is : {optimal_value:<19} │")
-    print("└────────────────────────────────────────┘")
+    print(f"|  Optimal value is : {optimal_value:<19}|")
+    print("+----------------------------------------+")

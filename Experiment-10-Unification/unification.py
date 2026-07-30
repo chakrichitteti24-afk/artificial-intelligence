@@ -16,7 +16,7 @@ def unify_var(var, x, theta):
     """
     if var in theta:
         return unify(theta[var], x, theta)
-    elif x in theta:
+    elif isinstance(x, str) and x in theta:
         return unify(var, theta[x], theta)
     else:
         # Create a new substitution
@@ -50,10 +50,12 @@ if __name__ == "__main__":
     # Variables are single lowercase letters (e.g., 'x', 'y', 'z', 'u')
     # Constants/Predicates/Functions are strings of length > 1 or uppercase
     
-    # Expression 1: P(a, X, f(g(Y))) -> ['P', 'A', 'x', ['f', ['g', 'y']]]
+    # Expression 1: P(A, x, f(g(y))) -> ['P', 'A', 'x', ['f', ['g', 'y']]]
     expr1 = ['P', 'A', 'x', ['f', ['g', 'y']]]
     
-    # Expression 2: P(Z, f(Z), f(U)) -> ['P', 'z', ['f', 'z'], ['f', 'u']]
+    # Expression 2: P(z, f(z), f(u)) -> ['P', 'z', ['f', 'z'], ['f', 'u']]
+    # For unification to succeed: z must unify with A (constant), x must unify with f(A),
+    # and f(g(y)) must unify with f(u), meaning u = g(y).
     expr2 = ['P', 'z', ['f', 'z'], ['f', 'u']]
     
     print("--- Unification Algorithm ---")
